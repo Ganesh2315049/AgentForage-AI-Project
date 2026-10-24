@@ -1,0 +1,21 @@
+
+Windows Event ID 4625:
+This event indicates that a logon attempt failed.
+SOC analysts should examine the account name, source workstation,
+source network address when available, logon type, and timestamp.
+Repeated failures against multiple accounts may indicate password
+spraying. Repeated failures against one account may indicate
+brute-force attempts. Investigate surrounding events before
+concluding that an attack occurred.
+
+Windows Event ID 4624:
+This event indicates that a logon succeeded.
+Analysts should review the account, logon type, source information,
+and time. An unusual successful login following repeated failures
+may require investigation.
+
+Incident response:
+Validate alerts using available logs and contextual evidence.
+Record the affected account, timestamps, source IP address when
+available, investigation steps, and conclusion. Do not declare an
+incident confirmed based on a single indicator alone.
